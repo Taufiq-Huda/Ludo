@@ -1,0 +1,43 @@
+<div id="main">
+    {{#each home}}
+    <div class="home {{this}}" id="home_{{@index}}">
+        <div class="rest">
+            <div class="rest_0 seat"></div>
+            <div class="rest_1 seat"></div>
+            <div class="rest_2 seat"></div>
+            <div class="rest_3 seat"></div>
+        </div>
+    </div>
+    {{/each}}
+
+    <div id="end">end</div>
+
+    {{#each road}}
+    <div class="Ghor" id="Ghor_{{this}}"></div>
+    {{/each}}
+
+    {{#each home}}
+    <div id="safe_{{@index}}">
+        <div class="Ghor {{this}}" id="{{@index}}_4"></div>
+        <div class="Ghor {{this}}" id="{{@index}}_3"></div>
+        <div class="Ghor {{this}}" id="{{@index}}_2"></div>
+        <div class="Ghor {{this}}" id="{{@index}}_1"></div>
+        <div class="Ghor {{this}}" id="{{@index}}_0"></div>
+    </div>
+    {{/each}}
+
+</div>
+
+<div id="waiting">
+    <div class="warning">
+        <h1>Waiting for everone</h1>
+    </div>
+    <div id="joined">
+        <ul id="list">
+        </ul>
+    </div>
+</div>
+
+<script>
+    let totalPlayer = {{ totalPlayer }};
+</script>

@@ -1,0 +1,44 @@
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+
+                        <div class="mb-md-5 mt-md-4 pb-5 d-block" id="HostTable">
+
+                            <h2 class="fw-bold mb-2 text-uppercase">Host a Ludo table</h2>
+                            <p class="text-white-50 mb-5">Please enter your table code</p>
+
+                            <div class="form-outline form-white mb-5">
+                                <label class="form-label mb-3">Total Number of Player</label>
+                                <input type="number" id="typenumX" class="form-control form-control-lg" required>
+                                <div class="d-none invalid-feedback" id="w_player">
+                                    Maximum 4 players is allowed
+                                </div>
+                            </div>
+
+                            <button class="btn btn-outline-light btn-lg px-5" id="host">Host a table</button>
+
+                        </div>
+                        <div class="mb-md-5 mt-md-4 pb-5 d-none" id="EnterTable">
+
+                            <h2 class="fw-bold mb-2 text-uppercase">Host a Ludo table</h2>
+
+                            <div class="form-outline form-white mb-5">
+                                <label class="form-label mb-3">Share Your Table Code</label>
+                               <section class="container bg-primary w-75 vh-5 p-2 rounded display-1" id="code">123456</section>
+                            </div>
+
+                            <button class="btn btn-outline-light btn-lg px-5" id="enter">Enter in the table</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="../js/host.js"></script>
